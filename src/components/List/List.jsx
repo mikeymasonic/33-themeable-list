@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const List = ({ id, name, species, status, image }) => (
   <section>
@@ -11,7 +12,7 @@ const List = ({ id, name, species, status, image }) => (
 );
 
 List.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   species: PropTypes.string,
   status: PropTypes.string,
