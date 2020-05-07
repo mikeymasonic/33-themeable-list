@@ -5,7 +5,7 @@ import List from './List';
 describe('List component', () => {
   it('renders List', () => {
     const wrapper = shallow(<List
-      id="1"
+      id={1}
       name="Rick Sanchez"
       species="Human"
       status="Alive"

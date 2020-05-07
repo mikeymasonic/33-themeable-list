@@ -12,7 +12,7 @@ const List = ({ id, name, species, status, image }) => (
 );
 
 List.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   species: PropTypes.string,
   status: PropTypes.string,
