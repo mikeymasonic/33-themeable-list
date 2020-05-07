@@ -2,9 +2,9 @@
 
 exports[`List component renders List 1`] = `
 <section>
-  <h4>
+  <h3>
     Rick Sanchez
-  </h4>
+  </h3>
   <h4>
     Species: 
     Human

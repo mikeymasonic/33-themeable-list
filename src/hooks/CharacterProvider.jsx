@@ -4,11 +4,6 @@ import { fetchList } from '../services/rickAndMortyAPI';
 
 const CharacterContext = createContext();
 
-// const factoryMethod = {
-//   light: lightMode,
-//   dark: darkMode
-// };
-
 export const CharacterProvider = ({ children }) => {
   const [character, setCharacter] = useState({});
   const [characters, setCharacters] = useState([]);

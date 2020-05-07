@@ -9,8 +9,8 @@ describe('Details component', () => {
       species="Human"
       status="Alive"
       image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-      // origin="Earth (C-137)"
-      // location="Earth (Replacement Dimension)"
+      origin="Earth (C-137)"
+      location="Earth (Replacement Dimension)"
     />);
     expect(wrapper).toMatchSnapshot();
   });

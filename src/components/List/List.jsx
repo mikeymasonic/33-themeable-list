@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
 
 const List = ({ id, name, species, status, image }) => (
   <section>
-    {/* <h4><Link to={`detail/${id}`} >{name}</Link></h4> */}
-    <h4>{name}</h4>
+    <h3>{name}</h3>
     {species && <h4>Species: {species}</h4>}
     {status && <h4>Status: {status}</h4>}
     {image && <img src={image} />}

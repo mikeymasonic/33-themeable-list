@@ -1,9 +1,3 @@
-// export const fetchList = (page) => {
-//   return fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
-//     .then(res => res.json())
-//     .then(json=> json.results);
-// };
-
 export const fetchList = (page) => {
   return fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
     .then(res => res.json())

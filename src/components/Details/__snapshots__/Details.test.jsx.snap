@@ -16,5 +16,13 @@ exports[`Details component renders Details 1`] = `
     Status: 
     Alive
   </h4>
+  <h4>
+    Origin: 
+    Earth (C-137)
+  </h4>
+  <h4>
+    Location: 
+    Earth (Replacement Dimension)
+  </h4>
 </Fragment>
 `;
