@@ -55,3 +55,8 @@ export const usePage = () => {
   const { page } = useContext(CharacterContext);
   return page;
 };
+
+export const useToggle = () => {
+  const { toggle } = useContext(CharacterContext);
+  return toggle;
+};
