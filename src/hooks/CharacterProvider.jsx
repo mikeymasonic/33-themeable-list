@@ -18,7 +18,11 @@ export const CharacterProvider = ({ children }) => {
   useEffect(() => {
     fetchList(page)
       .then(json => setCharacters(json));
-  }, []);
+  }, [page]);
+
+  const handlePage = (val) => {
+    setPage(page + val);
+  };
 
   const toggle = ({ target }) => {
     if(target.checked) setTheme('light');
@@ -26,7 +30,7 @@ export const CharacterProvider = ({ children }) => {
   };
 
   return (
-    <CharacterContext.Provider value={{ character, characters, theme, page, toggle }}>
+    <CharacterContext.Provider value={{ character, characters, theme, page, toggle, handlePage }}>
       {children}
     </CharacterContext.Provider>
   )
@@ -59,4 +63,9 @@ export const usePage = () => {
 export const useToggle = () => {
   const { toggle } = useContext(CharacterContext);
   return toggle;
+};
+
+export const useHandlePage = () => {
+  const { handlePage } = useContext(CharacterContext);
+  return handlePage;
 };

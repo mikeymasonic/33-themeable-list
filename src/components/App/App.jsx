@@ -28,12 +28,14 @@ import Header from '../Header/Header';
 import CharacterList from '../../container/CharacterList/CharacterList';
 // import CharacterDetail from '../../container/CharacterDetail/CharacterDetail';
 import { CharacterProvider } from '../../hooks/CharacterProvider';
+import Paging from '../Paging/Paging';
 
 export default function App() {
   return (
 
     <CharacterProvider>
       <Header />
+      <Paging />
       <CharacterList />
     </CharacterProvider>
 
