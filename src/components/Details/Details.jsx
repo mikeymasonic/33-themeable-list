@@ -7,18 +7,18 @@ const Details = ({ name, image, species, status, origin, location }) => (
     {image && <img src={image} />}
     {species && <h4>Species: {species}</h4>}
     {status && <h4>Status: {status}</h4>}
-    {origin && <p>Origin: {origin}</p>}
-    {location && <p>location: {location}</p>}
+    {origin && <h4>Origin: {origin}</h4>}
+    {location && <h4>Location: {location}</h4>}
   </>
 );
 
 Details.propTypes = {
   name: PropTypes.string,
   image: PropTypes.string,
-  occupation: PropTypes.string,
+  species: PropTypes.string,
   status: PropTypes.string,
-  description: PropTypes.string,
-  portrayedBy: PropTypes.string
+  origin: PropTypes.string,
+  location: PropTypes.string
 };
 
 export default Details;

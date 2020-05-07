@@ -19,7 +19,7 @@ export const fetchList = (page) => {
 export const fetchDetail = (id) => {
   return fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then(res => res.json())
-    .then(res => res.results.map(json => ({
+    .then(json => ({
       id: json.id,
       name: json.name,
       image: json.image,
@@ -27,5 +27,5 @@ export const fetchDetail = (id) => {
       status: json.status,
       origin: json.origin.name,
       location: json.location.name
-    })));
+    }));
 };

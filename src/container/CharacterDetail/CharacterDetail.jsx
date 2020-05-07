@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom';
 
 const CharacterDetail = () => {
   const [character, setCharacter] = useState({});
-  let { name } = useParams();
+  let { id } = useParams();
 
   useEffect(() => {
-    fetchDetail(name)
+    fetchDetail(id)
       .then(character => setCharacter(character));
   }, []);
 
