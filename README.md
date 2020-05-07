@@ -1,17 +1,3 @@
-List-
-name
-image
-species
-status
-
-Detail-
-name
-image
-species
-status
-origin - name
-location - name
-
 # LAB - Themeable List
 
 Get a list of things from an API and display them.
