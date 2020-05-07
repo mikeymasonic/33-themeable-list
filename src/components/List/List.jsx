@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const List = ({ id, name, species, status, image }) => (
   <section>
-    <p><Link to={`detail/${id}`} >{name}</Link></p>
-    {species && <p>Species: {species}</p>}
-    {status && <p>Status: {status}</p>}
+    <h4><Link to={`detail/${id}`} >{name}</Link></h4>
+    {species && <h4>Species: {species}</h4>}
+    {status && <h4>Status: {status}</h4>}
     {image && <img src={image} />}
   </section>
 );
