@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { fetchList } from '../services/rickAndMortyAPI';
 
@@ -17,8 +17,8 @@ export const CharacterProvider = ({ children }) => {
 
   useEffect(() => {
     fetchList(page)
-      .then(json => setCharacters(characters));
-  }, [page]);
+      .then(json => setCharacters(json));
+  }, []);
 
   const toggle = ({ target }) => {
     if(target.checked) setTheme('light');
@@ -26,9 +26,9 @@ export const CharacterProvider = ({ children }) => {
   };
 
   return (
-    <CharacterProvider value={{ character, characters, theme, page, toggle }}>
+    <CharacterContext.Provider value={{ character, characters, theme, page, toggle }}>
       {children}
-    </CharacterProvider>
+    </CharacterContext.Provider>
   )
 };
 

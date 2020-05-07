@@ -1,19 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<BrowserRouter>
+<CharacterProvider>
   <Header />
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/detail/:id?"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/:page?"
-    />
-  </Switch>
-</BrowserRouter>
+  <CharacterList />
+</CharacterProvider>
 `;

@@ -2,21 +2,17 @@
 
 exports[`List component renders List 1`] = `
 <section>
-  <p>
-    <Link
-      to="detail/1"
-    >
-      Rick Sanchez
-    </Link>
-  </p>
-  <p>
+  <h4>
+    Rick Sanchez
+  </h4>
+  <h4>
     Species: 
     Human
-  </p>
-  <p>
+  </h4>
+  <h4>
     Status: 
     Alive
-  </p>
+  </h4>
   <img
     src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
   />
