@@ -13,12 +13,15 @@
     "babel",
     "react"
   ],
+  "files.associations": {
+    "*.css": "scss"
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
   ],
   "rules": {
-    "no-console": "warn",
+    "no-console": "off",
     "indent": [
       "error",
       2,
